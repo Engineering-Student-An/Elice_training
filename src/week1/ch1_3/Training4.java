@@ -2,7 +2,7 @@ package week1.ch1_3;
 
 import java.util.Scanner;
 
-public class training4 {
+public class Training4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("달리기 등 수를 입력하세요.");

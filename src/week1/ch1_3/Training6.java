@@ -2,7 +2,7 @@ package week1.ch1_3;
 
 import java.util.Scanner;
 
-public class training6 {
+public class Training6 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("메뉴 번호를 입력해 주세요.");

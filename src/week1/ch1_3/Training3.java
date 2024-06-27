@@ -2,7 +2,7 @@ package week1.ch1_3;
 
 import java.util.Scanner;
 
-public class training3 {
+public class Training3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int grade = input.nextInt();//성적을 입력받는 변수 grade
