@@ -2,7 +2,7 @@ package week1.ch1_2;
 
 import java.util.Scanner;
 
-public class training4 {
+public class Training4 {
     public static void main(String[] args) {
         //지시사항 1번을 참고하여 코드를 작성하세요.
         Scanner scanner = new Scanner(System.in);

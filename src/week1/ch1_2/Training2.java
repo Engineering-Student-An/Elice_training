@@ -1,6 +1,6 @@
 package week1.ch1_2;
 
-public class training2 {
+public class Training2 {
     public static void main(String[] args) {
         // 정수형 자료를 실수형으로 변환
         int height = 20;
