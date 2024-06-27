@@ -1,6 +1,6 @@
 package week1.ch1_1;
 
-public class training2 {
+public class Training2 {
     public static void main(String args[]) {
         System.out.println("Hello Java!");
         System.out.println("Hello Java!");
