@@ -1,5 +1,7 @@
 package week2.preview.superKeyword;
 
+import java.util.Arrays;
+
 public class ClassC extends ClassB{
 
     public ClassC() {
@@ -9,5 +11,9 @@ public class ClassC extends ClassB{
 
         super(10, 20); // 부모의 생성자 직접 호출
         System.out.println("ClassC 기본생성자");
+
+        int[] arr = {1,2,3,5,2};
+
+        Arrays.sort(arr);
     }
 }
