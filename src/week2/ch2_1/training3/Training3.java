@@ -1,4 +1,4 @@
-package week2.ch2_1;
+package week2.ch2_1.training3;
 
 class Book {
     // 지시 사항을 참고하여 코드를 작성해 보세요.

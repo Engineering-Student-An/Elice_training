@@ -1,4 +1,4 @@
-package week2.ch2_1;
+package week2.ch2_1.training2;
 
 
 // Order 클래스를 선언하고, 멤버 변수와 메서드(printOrderInfo)를 작성해 주세요.

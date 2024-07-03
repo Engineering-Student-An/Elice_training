@@ -1,4 +1,4 @@
-package week2.ch2_1;
+package week2.ch2_1.training4;
 
 // 여기에 Character 클래스를 선언하고, 클래스 내부에 멤버 변수를 추가해 주세요.
 class Character {

@@ -1,4 +1,4 @@
-package week2.ch2_1;
+package week2.ch2_1.training1;
 
 public class Training1 {
     public static void main(String[] args) {
