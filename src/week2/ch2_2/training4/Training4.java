@@ -1,4 +1,4 @@
-package week2.ch2_2;
+package week2.ch2_2.training4;
 
 
 class Cafe {

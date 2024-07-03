@@ -1,4 +1,4 @@
-package week2.ch2_2;
+package week2.ch2_2.training3;
 
 class Cafe {
     // 멤버 변수 선언 부분은 수정하지 말아주세요! 채점이 정상적으로 진행되지 않을 수 있습니다.
