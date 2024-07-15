@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        String filePath = "./Hello.txt";
+        String filePath = "src/week4/ch4_1/training4/Hello.txt";
 
         long startTime1 = System.nanoTime();
         try (FileReader fileReader = new FileReader(filePath)) {
