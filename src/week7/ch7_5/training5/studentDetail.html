@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>학생 세부 정보</title>
+</head>
+<body>
+<h1>학생 세부 정보</h1>
+
+<div>
+    <!-- 지시사항을 참고하여 코드를 작성해 보세요. -->
+    <p th:text="'ID: ' + ${student.id}"></p>
+    <p th:text="'이름: ' + ${student.name}"></p>
+    <p th:text="'이메일: ' + ${student.email}"></p>
+    <p th:text="${'학년: ' + student.grade}"></p>
+</div>
+
+<a th:href="@{/students}">학생 목록으로 돌아가기</a>
+</body>
+</html>
