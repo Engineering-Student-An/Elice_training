@@ -97,8 +97,7 @@
 - 8-5. (08/16) JDBC 데이터 접근과 연관 관계 매핑 기본
 </details>
 
-<strong>ch9. 1차 프로젝트 웹 서비스 제작</strong> 
-<strong>ch10. 1차 프로젝트 웹 서비스 제작</strong> 
+<strong>ch9, 10. 1차 프로젝트 웹 서비스 제작</strong> 
 
 <details>
 <summary>
