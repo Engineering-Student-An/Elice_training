@@ -15,7 +15,7 @@
 
 <details>
 <summary>
-<strong>ch2. 객체지향 프로그래밍</strong> 
+<strong>ch2. 객체지향 프로그래밍</strong> 
 </summary>
 
 - 2-1. (07/01) 객체지향 프로그래밍 기본
