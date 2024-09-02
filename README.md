@@ -11,7 +11,9 @@
 - 1-3. (06/26) 제어문(조건문) 
 - 1-4. (06/27) 제어문(반복문)
 - 1-5. (06/28) 제어문 종합 실습
+</details>
 
+<details>
 <summary>
 <strong>ch2. 객체지향 프로그래밍</strong> 
 </summary>
@@ -21,7 +23,9 @@
 - 2-3. (07/03) 상속과 캡슐화
 - 2-4. (07/04) 다형성
 - 2-5. (07/05) 추상화와 인터페이스
+</details>
 
+<details>
 <summary>
 <strong>ch3. Java 활용</strong> 
 </summary>
@@ -31,7 +35,9 @@
 - 3-3. (07/10) 람다 표현식과 스트림
 - 3-4. (07/11) 예외 처리
 - 3-5. (07/12) Git
+</details>
 
+<details>
 <summary>
 <strong>ch4. Java 네트워킹</strong> 
 </summary>
@@ -41,7 +47,9 @@
 - 4-3. (07/17) HTTP 프로토콜
 - 4-4. (07/18) 소켓 네트워크 프로그래밍
 - 4-5. (07/19) REST API 기본 설계와 구현
+</details>
 
+<details>
 <summary>
 <strong>ch5. 데이터베이스 기초</strong> 
 </summary>
@@ -51,7 +59,9 @@
 - 5-3. (07/24) SQL 1
 - 5-4. (07/25) SQL 2
 - 5-5. (07/26) SQL3
+</details>
 
+<details>
 <summary>
 <strong>ch6. Spring Framework 핵심 원리</strong> 
 </summary>
@@ -61,7 +71,9 @@
 - 6-3. (07/31) Spring Container와 Bean
 - 6-4. (08/01) Spring MVC 1
 - 6-5. (08/02) Spring MVC 2
+</details>
 
+<details>
 <summary>
 <strong>ch7. 프론트엔드 핵심 기술</strong> 
 </summary>
@@ -71,7 +83,9 @@
 - 7-3. (08/07) JavaScript 1
 - 7-4. (08/08) JavaScript 2
 - 7-5. (08/09) Thymeleaf 핵심 개념
+</details>
 
+<details>
 <summary>
 <strong>ch8. Spring MVC와 웹 개발</strong> 
 </summary>
@@ -81,10 +95,12 @@
 - 8-3. (08/14) Spring AOP
 - 8-4. (08/15) 예외 처리
 - 8-5. (08/16) JDBC 데이터 접근과 연관 관계 매핑 기본
+</details>
 
 <strong>ch9. 1차 프로젝트 웹 서비스 제작</strong> 
 <strong>ch10. 1차 프로젝트 웹 서비스 제작</strong> 
 
+<details>
 <summary>
 <strong>ch11. Spring 데이터 접근과 JPA</strong> 
 </summary>
@@ -94,7 +110,6 @@
 - 11-3. (09/04) 트랜잭션
 - 11-4. (09/05) Spring Data JPA
 - 11-5. (09/06) WebSocket
-
 </details>
 
 
