@@ -1,4 +1,4 @@
-package week12.ch12_1.training5;
+package week12.ch12_2.training3;
 
 import com.elice.domain.Article;
 import com.elice.dto.AddArticleRequest;
@@ -11,8 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,23 +31,22 @@ class BlogServiceTest {
 
     // 지시사항을 참고하여 코드를 작성해 보세요.
     @Test
-    @DisplayName("블로그 글 업데이트 테스트")
-    void updateArticleTest() {
+    @DisplayName("ID로 블로그 글 조회 테스트")
+    void findArticleByIdTest() {
 
 
         //given
         Long articleId = 1L;
-        Article existingArticle = new Article("Old Title", "Old Content");
-        UpdateArticleRequest updateRequest = new UpdateArticleRequest("New Title", "New Content");
-        when(blogRepository.findById(articleId)).thenReturn(Optional.of(existingArticle));        
+        Article article = new Article("Test Title", "Test Content");
+        when(blogRepository.findById(articleId)).thenReturn(Optional.of(article));
         
         //when
-        Article updatedArticle = blogService.update(articleId, updateRequest);
+        Article foundArticle = blogService.findById(articleId);
         
         //then
-        assertNotNull(updatedArticle);
-        assertEquals("New Title", updatedArticle.getTitle());
-        assertEquals("New Content", updatedArticle.getContent());
+        assertNotNull(foundArticle);
+        assertEquals("Test Title", foundArticle.getTitle());
+        assertEquals("Test Content", foundArticle.getContent());
         verify(blogRepository, times(1)).findById(articleId);
     }
     

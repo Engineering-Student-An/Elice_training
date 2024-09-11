@@ -1,4 +1,4 @@
-package week12.ch12_1.training2;
+package week12.ch12_2.training2;
 
 import com.elice.domain.Article;
 import com.elice.dto.AddArticleRequest;
@@ -13,7 +13,6 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;

@@ -1,4 +1,4 @@
-package week12.ch12_1.training1;
+package week12.ch12_2.training1;
 
 import com.elice.domain.Article;
 import lombok.AllArgsConstructor;
