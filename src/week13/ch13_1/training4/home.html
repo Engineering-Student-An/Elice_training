@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+<div class="bg-white shadow-xl rounded-lg p-6 w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center text-blue-600">엘리스 방문기록 페이지</h1>
+
+    <h2 class="text-xl font-semibold mb-2 text-gray-700">방문 가능한 페이지:</h2>
+    <div class="grid grid-cols-3 gap-2 mb-4">
+        <a href="/blog" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300 text-center">블로그</a>
+        <a href="/about" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300 text-center">소개</a>
+        <a href="/contact" class="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition duration-300 text-center">연락처</a>
+    </div>
+
+    <h2 class="text-xl font-semibold mb-2 text-gray-700">최근 방문 기록:</h2>
+    <p th:if="${visitHistory == null || visitHistory.isEmpty()}" class="text-gray-500 italic">아직 방문 기록이 없습니다.</p>
+    <ul th:unless="${visitHistory == null || visitHistory.isEmpty()}" class="space-y-2">
+        <li th:each="visit : ${visitHistory.split(',')}" class="bg-gray-200 rounded p-2">
+            <a th:href="${visit}" th:text="${visit}" class="text-blue-600 hover:underline"></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
