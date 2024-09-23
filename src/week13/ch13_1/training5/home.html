@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>엘리스 도서관</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body.light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        body.dark-theme {
+            background-color: #333333;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body th:class="${theme == 'dark' ? 'dark-theme' : 'light-theme'}">
+<div class="container mt-5">
+    <h1>엘리스 도서관에 오신 것을 환영합니다!</h1>
+    <hr class="my-4" />
+    <p
+            th:if="${session.loginMember}"
+            th:text="'안녕하세요, ' + ${session.loginMember.name} + '님! 읽고 싶은 책을 마음껏 대여해 보세요.'"
+    >
+        읽고 싶은 책을 마음껏 대여해 보세요.
+    </p>
+    <p>
+        테마를 변경해보겠습니다.
+    </p>
+
+    <a href="/theme-settings" class="btn btn-info">테마 설정</a>
+</div>
+</body>
+</html>

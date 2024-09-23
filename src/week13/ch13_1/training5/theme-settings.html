@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <h2>테마 설정</h2>
+    <form action="/set-theme" method="post">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="theme" id="lightTheme" value="light" checked>
+            <label class="form-check-label" for="lightTheme">
+                밝은 테마
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="theme" id="darkTheme" value="dark">
+            <label class="form-check-label" for="darkTheme">
+                어두운 테마
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">테마 저장</button>
+    </form>
+</div>
