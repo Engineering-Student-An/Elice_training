@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Status</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96 text-center">
+    <h1 class="text-2xl font-bold mb-6 text-gray-800">로그인 상태</h1>
+
+    <div class="space-y-4" th:if="${isLoggedIn}">
+        <p>정상적으로 로그인 되었습니다.</p>
+        <p>어서오세요, <span class="font-bold text-indigo-600" th:text="${username}"></span>님!</p>
+        <p>세션 만료까지 남은 시간: <span id="countdown" class="font-bold text-indigo-600"></span></p>
+        <form th:action="@{/logout}" method="post">
+            <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out">
+                로그아웃
+            </button>
+        </form>
+    </div>
+
+    <div class="space-y-4" th:unless="${isLoggedIn}">
+        <p>로그인 되어있지 않은 상태입니다.</p>
+        <a href="/login" class="inline-block w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out">
+            로그인하기
+        </a>
+    </div>
+</div>
+
+<script th:if="${isLoggedIn}">
+    function startCountdown(duration) {
+        let timer = duration;
+        const countdownElement = document.getElementById('countdown');
+
+        const intervalId = setInterval(function () {
+            const minutes = parseInt(timer / 60, 10);
+            const seconds = parseInt(timer % 60, 10);
+
+            countdownElement.textContent = minutes + "분 " + seconds + "초";
+
+            if (--timer < 0) {
+                clearInterval(intervalId);
+                countdownElement.textContent = "세션 만료";
+                setTimeout(() => {
+                    window.location.href = '/login?expired';
+                }, 1000);
+            }
+        }, 1000);
+    }
+
+    // 서버에서 전달받은 남은 시간 (초 단위로 변환)
+    const remainingTime = [[${remainingSeconds}]];
+    startCountdown(remainingTime);
+</script>
+</body>
+</html>
