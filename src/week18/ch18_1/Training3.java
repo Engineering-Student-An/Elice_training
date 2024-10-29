@@ -3,7 +3,7 @@ package week18.ch18_1;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class training3 {
+public class Training3 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
